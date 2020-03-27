@@ -1,4 +1,10 @@
-# traductor
+# Ecuaciones diferenciales lineales de orden superior
 
+## Ecuaciones diferenciales lineales homogeneas con coeficientes constantes 
+## Ecuaciones diferenciales lineales no homogeneas con coeficientes constantes 
+
+## Método de variación de parámetros
+
+## Ecuaciones diferenciales de Euler
 
 

@@ -1,4 +1,4 @@
-# estadistica
+# Ecuaciones diferenciales con coeficientes variables
 
 ```{theorem} 
 En la elipse se verifican las siguientes igualdades

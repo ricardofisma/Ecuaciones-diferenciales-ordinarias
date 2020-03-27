@@ -1,4 +1,4 @@
-# eee
+# Solucion de ecuaciones diferenciales mediante la Trasformada de Laplace 
 
 Example text outside R code here; we know the value of
 pi is In this section, we give a very brief introduction to Pandoc’s Markdown. Readers who are familiar with Markdown can skip this section. The comprehensive syntax of Pandoc’s Markdown can be found on the Pandoc website http://pandoc.org.

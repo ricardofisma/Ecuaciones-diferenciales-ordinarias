@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Referencias | Ecuaciones diferenciales ordinarias</title>
-  <meta name="description" content="Referencias | Ecuaciones diferenciales ordinarias" />
+  <title>Capítulo 5 Ecuaciones diferenciales con coeficientes variables | Ecuaciones diferenciales ordinarias</title>
+  <meta name="description" content="Capítulo 5 Ecuaciones diferenciales con coeficientes variables | Ecuaciones diferenciales ordinarias" />
   <meta name="generator" content="bookdown 0.17 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Referencias | Ecuaciones diferenciales ordinarias" />
+  <meta property="og:title" content="Capítulo 5 Ecuaciones diferenciales con coeficientes variables | Ecuaciones diferenciales ordinarias" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Referencias | Ecuaciones diferenciales ordinarias" />
+  <meta name="twitter:title" content="Capítulo 5 Ecuaciones diferenciales con coeficientes variables | Ecuaciones diferenciales ordinarias" />
   
   
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="trasformada-de-laplace.html"/>
-
+<link rel="prev" href="operadores-diferenciales.html"/>
+<link rel="next" href="solucion-de-ecuaciones-diferenciales-mediante-la-trasformada-de-laplace.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -143,22 +143,55 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="referencias" class="section level1 unnumbered">
-<h1>Referencias</h1>
+<div id="ecuaciones-diferenciales-con-coeficientes-variables" class="section level1">
+<h1><span class="header-section-number">Capítulo 5</span> Ecuaciones diferenciales con coeficientes variables</h1>
 
-<div id="refs" class="references">
-<div>
-<p>Xie, Yihui. 2015. <em>Dynamic Documents with R and Knitr</em>. 2nd ed. Boca Raton, Florida: Chapman; Hall/CRC. <a href="http://yihui.org/knitr/">http://yihui.org/knitr/</a>.</p>
+<div class="theorem">
+<p><span id="thm:unnamed-chunk-7" class="theorem"><strong>Teorema 5.1  </strong></span>En la elipse se verifican las siguientes igualdades</p>
+<ol style="list-style-type: decimal">
+<li><p><span class="math inline">\(d\left[B_1;F_i\right]=d\left[B_2;F_i\right]=a\)</span></p></li>
+<li><p><span class="math inline">\(d\left[V_1;C\right]=d\left[V_2;C\right]=a\)</span></p></li>
+<li><p><span class="math inline">\(d\left[C;\mathcal{L}_1\right]=d\left[C;\mathcal{L}_2\right]=\frac{c}{e}\)</span></p></li>
+<li><span class="math inline">\(c=d\left[P;F_1\right]=d\left[P;F_2\right]\)</span> entonces <span class="math inline">\(c=ae\)</span></li>
+</ol>
 </div>
+
+
+<div class="proof">
+<p> <span class="proof"><em>Demostracion. </em></span> 
+1. Ya que <span class="math inline">\(d\left[B_1;F_1\right]+d\left[B_1;F_2\right]=2a=d\left[B_2;F_1\right]+d\left[B_2;F_2\right]\)</span> es decir <span class="math inline">\(2d\left[B_1;F_i\right]=2a=2d\left[B_2;F_i\right]\)</span> entonces <span class="math inline">\(d\left[B_1;F_i\right]=a=d\left[B_2;F_i\right]\)</span> <span class="math inline">\(i=1,2\)</span>.</p>
+<ol start="2" style="list-style-type: decimal">
+<li><p>Por la definición <a href="#eq:binom">(<strong>??</strong>)</a> de la elipse se tiene
+<span class="math display" id="eq:er">\[\begin{equation}
+d\left[V_1;F_2\right]+d\left[V_1;F_1\right]=2a
+\tag{5.1}
+\end{equation}\]</span>
+además la diferencia
+<span class="math display" id="eq:err">\[\begin{equation}
+d\left[V_1;F_2\right]-d\left[V_1;F_1\right]=2c
+\tag{5.2}
+\end{equation}\]</span>
+restando las ecuaciones <a href="ecuaciones-diferenciales-con-coeficientes-variables.html#eq:er">(5.1)</a> y <a href="ecuaciones-diferenciales-con-coeficientes-variables.html#eq:err">(5.2)</a> se tiene
+<span class="math display" id="eq:errr">\[\begin{equation}
+d\left[V_1;F_1\right]=a-c
+\tag{5.3}
+\end{equation}\]</span>
+entonces haciendo uso de <a href="ecuaciones-diferenciales-con-coeficientes-variables.html#eq:errr">(5.3)</a> en <span class="math inline">\(d\left[V_1;C\right]=d\left[V_1;F_1\right]+d\left[F_1;C\right]=(a-c)+c=a\)</span>; de manera similar para el vértice <span class="math inline">\(V_2\)</span>.</p></li>
+<li><p>En efecto <span class="math display">\[\frac{d\left[B;F_i\right]}{d\left[B;\mathcal{L}_i\right]}=e\Longleftrightarrow \frac{a}{d\left[B;\mathcal{L}_i\right]}=e\]</span> además <span class="math inline">\(d\left[B_i;\mathcal{L}_i\right]=d\left[C;\mathcal{L}_i\right]\)</span> por lo tanto <span class="math inline">\(\frac{a}{d\left[C;\mathcal{L}_i\right]}=e\)</span>.</p></li>
+<li><p>Pues <span class="math display">\[\frac{d\left[P;F_1\right]}{d\left[P;\mathcal{L}_1\right]}=e\]</span> implica <span class="math inline">\(\frac{a-c}{\frac{a}{e}-a}=e\)</span> es decir <span class="math inline">\(c=ae\)</span>.</p></li>
+</ol>
+Por lo tanto
 </div>
+
+
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="trasformada-de-laplace.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-
+<a href="operadores-diferenciales.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="solucion-de-ecuaciones-diferenciales-mediante-la-trasformada-de-laplace.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
