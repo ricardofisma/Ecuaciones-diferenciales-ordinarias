@@ -42,7 +42,7 @@ description: ""
 
 
 
-Este libro sobre la estadistica descriptiva. cuyo objetivo es demostrar resultados basicos muy útiles en el desarrollo de investigaciones.
+Este libro sobre ecuaciones diferenciales ordinarias y sus aplicaciones cuyo objetivo es demostrar resultados basicos muy útiles en el desarrollo de investigaciones.
 
 $$\sum_1^2$$
 

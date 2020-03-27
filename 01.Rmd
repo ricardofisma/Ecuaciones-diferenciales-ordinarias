@@ -2,9 +2,40 @@
 
 # Ecuaciones diferenciales de primer orden y primer grado
 
+
 ## Ecuaciones diferenciales de variable separable
 
+Si una ecuación ordinaria de primer orden y primer grado $\frac{dy}{dx}=f(x,y)$ se puede expresarse como $M(x)dx+N(y)dy=0$ entonces la ecuación recibe el nombre de ecuación diferencial ordinaria de variable separable y la solución es por integración directa $$\int M(x)dx+\int N(y)dy=0$$
 
+
+```{exercise}
+$\left(y^2+xy^2\right)\frac{dy}{dx}+x^2-x^2y=0$
+```
+
+```{solution}
+\begin{align*}
+0&=y^2\left(1+x\right)dy+x^2\left(1-y\right)dx\\
+&=\frac{y^2}{1-y}dy+\frac{x^2}{1+x}dx
+\end{align*}
+
+integrando se tiene $$\int\frac{y^2}{1-y}dy+\int\frac{x^2}{1+x}dx=\int 0$$
+$$(x+y)(x-y-2)+2\ln\left\vert\frac{1+x}{1-y}\right\vert=k$$
+```
+
+
+```{exercise}
+$\left(y^2+xy^2\right)\frac{dy}{dx}+x^2-x^2y=0$
+```
+
+```{solution}
+\begin{align*}
+0&=y^2\left(1+x\right)dy+x^2\left(1-y\right)dx\\
+&=\frac{y^2}{1-y}dy+\frac{x^2}{1+x}dx
+\end{align*}
+
+integrando se tiene $$\int\frac{y^2}{1-y}dy+\int\frac{x^2}{1+x}dx=\int 0$$
+$$(x+y)(x-y-2)+2\ln\left\vert\frac{1+x}{1-y}\right\vert=k$$
+```
 ## Ecuaciones diferenciales reducible a variable separable
 
 
