@@ -192,6 +192,10 @@ Debido a la poca información estructurada de estadistica descriptiva se propone
 \hypertarget{ecuaciones-diferenciales-de-primer-orden-y-primer-grado}{%
 \chapter{Ecuaciones diferenciales de primer orden y primer grado}\label{ecuaciones-diferenciales-de-primer-orden-y-primer-grado}}
 
+\begin{align*}
+  5&=6\\
+  &=7
+\end{align*}
 Una ecuación ordinaria de primer orden y primer grado se representa como \[F\left(x,y,\frac{dy}{dx}\right)=0\] donde \(F\) relaciona tres variables; una funcion \(y\) su variable independiente \(x\) y su derivada \(\frac{dy}{dx}\), por ejemplo \(\left(y^2+xy^2\right)\frac{dy}{dx}+x^2-x^2y=0\). Si se despeja \(\frac{dy}{dx}\) de \(F\left(x,y,\frac{dy}{dx}\right)=0\) obtenemos \(\frac{dy}{dx}=g(x,y)\).
 
 \hypertarget{ecuaciones-diferenciales-de-variable-separable}{%
@@ -258,38 +262,39 @@ donde \(ax+by+c\) es la ecuacion de una recta sobre el plano euclideo son reduci
 \hypertarget{ecuaciones-diefrenciales-de-bernoulli}{%
 \section{Ecuaciones diefrenciales de Bernoulli}\label{ecuaciones-diefrenciales-de-bernoulli}}
 
-\[{\displaystyle {\frac {dy}{dx}}+p(x)y+q(x)y^{2}=f(x)}\]
+Son de la forma
+\begin{equation}
+\frac{dy}{dx}+p(x)y+q(x)y^{2}=f(x)
+\label{eq:w1w}
+\end{equation}
 
 Esta ecuación se resuelve si previamente se conoce una solución particular, sea \(y_{1}(x)\)
 
 Conocida dicha solución, se hace el cambio:
-
-\[y(x)=z(x)+y_{1}(x)\]
-
-y reemplazando, se obtiene:
-
+\begin{equation}
+y(x)=z(x)+y_{1}(x)
+\label{eq:w2}
+\end{equation}
+despejando \(\frac{dy}{dx}\) en la Ecuación \eqref{eq:w1w} y comparando con la derivada de la Ecuación \eqref{eq:w2}, se obtiene
 \[\frac{dy}{dx}=-p(x)y-q(x)y^{2}+f(x)=\frac {dz(x)}{dx}+\frac {dy_{1}}{dx}
 \]
-es decir:
-
-\[{\displaystyle -p(x)y-q(x)y^{2}+f(x)={\frac {dz}{dx}}-p(x)y_{1}(x)-q(x)y_{1}(x)^{2}+f(x)}\]
-
-\[\frac{dz}{dx}=p(x)(y_{1}-y)+q(x)(y_{1}^{2}-y^{2})\]
-
-lo que equivale a:
-
-\[\frac{dz}{dx}=-p(x)z-q(x)(z^{2}+2zy_{1})\]
-
-\[\frac{dz}{dx}=-(p(x)+2q(x)y_{1}(x))z-q(x)z^{2}\]
-
+además ya que \(y_1\) es solución de Ecuación \eqref{eq:w1} es decir:
+\begin{align}
+-p(x)y-q(x)y^{2}+f(x)&=\frac {dz}{dx}-p(x)y_{1}(x)-q(x)y_{1}(x)^{2}+f(x)\notag\\
+\frac{dz}{dx}&=p(x)(y_{1}-y)+q(x)(y_{1}^{2}-y^{2})\label{eq:w3}
+\end{align}
+la Ecuación \eqref{eq:w2} genera \(y_1-y=-z\) y \(y_1^2-y^2=z^2+2y_1z\) lo cual al sustituirlos en la Ecuación \eqref{eq:w3} resulta
+\begin{align*}
+\frac{dz}{dx}&=-p(x)z-q(x) \left(z^{2}+2zy_{1}\right)\\
+&=-\left(p(x)+2q(x)y_{1}(x)\right)z-q(x)z^{2}
+\end{align*}
 que corresponde a una ecuación diferencial de Bernoulli.
 
-Observación
-Obsérvese que si se hace la sustitución:
-
+\BeginKnitrBlock{remark}
+\iffalse{} {Observación. } \fi{}Obsérvese que si se hace la sustitución:
 \[y(x)=y_{1}(x)+{\frac {1}{z(x)}}\]
-
 propuesta por Euler en la década de 1760 esto lleva directamente a una ecuación lineal diferencial de primer orden.
+\EndKnitrBlock{remark}
 
 \hypertarget{ecuaciones-diferenciales-de-riccati}{%
 \section{Ecuaciones diferenciales de Riccati}\label{ecuaciones-diferenciales-de-riccati}}
@@ -301,7 +306,7 @@ propuesta por Euler en la década de 1760 esto lleva directamente a una ecuació
 \section{Ecuaciones diferenciales no resueltas con respecto a la primera derivada}\label{ecuaciones-diferenciales-no-resueltas-con-respecto-a-la-primera-derivada}}
 
 \BeginKnitrBlock{exercise}
-\protect\hypertarget{exr:unnamed-chunk-6}{}{\label{exr:unnamed-chunk-6} }Sean los datos
+\protect\hypertarget{exr:unnamed-chunk-7}{}{\label{exr:unnamed-chunk-7} }Sean los datos
 \EndKnitrBlock{exercise}
 
 \BeginKnitrBlock{solution}
@@ -377,7 +382,7 @@ Clase & Clase & \(f_i\) & \(F_i\) & \(F_i^*\) & \(h_i\) & \(H_i\) & \(H_i^*\) & 
 \end{longtable}
 
 \BeginKnitrBlock{exercise}
-\protect\hypertarget{exr:unnamed-chunk-8}{}{\label{exr:unnamed-chunk-8} }Si el promedio de \(n\) datos es \(\overline{x}\) entonces el promedio del conjunto inicial más un dato adicional \(x_{n+1}\) es \[\overline{x}'=\frac{n\overline{x}+x_{n+1}}{n+1}\] en general si se adicionan \(r\) datos \(y_1, y_2, \ldots y_r\) entonces el nuevo promedio será \[\overline{x}'=\frac{n\overline{x}+y_{1}+y_2+\ldots+y_r}{n+r}\]
+\protect\hypertarget{exr:unnamed-chunk-9}{}{\label{exr:unnamed-chunk-9} }Si el promedio de \(n\) datos es \(\overline{x}\) entonces el promedio del conjunto inicial más un dato adicional \(x_{n+1}\) es \[\overline{x}'=\frac{n\overline{x}+x_{n+1}}{n+1}\] en general si se adicionan \(r\) datos \(y_1, y_2, \ldots y_r\) entonces el nuevo promedio será \[\overline{x}'=\frac{n\overline{x}+y_{1}+y_2+\ldots+y_r}{n+r}\]
 \EndKnitrBlock{exercise}
 
 \BeginKnitrBlock{solution}
@@ -426,7 +431,7 @@ Clase & Clase & \(f_i\) & \(F_i\) & \(F_i^*\) & \(h_i\) & \(H_i\) & \(H_i^*\) & 
 Obtener la mediana consiste en ordenar los datos de menor a mayor y considerar dos casos: El prmero si el numero de datos s impar entonces el dato \(x_{\frac{n+1}{2}}\) del conjunto ordenado será la mediana es decir \(\text{Me}=x_{\frac{n+1}{2}}\) de otro lado si el número de datos es par entonces la mediana es la semisuma de los dos datos intermedios es decir \(\text{Me}=\frac{x_{\frac{n}{2}}+x_{\frac{n}{2}+1}}{2}\)
 
 \BeginKnitrBlock{exercise}
-\protect\hypertarget{exr:unnamed-chunk-10}{}{\label{exr:unnamed-chunk-10} }Sean los conjuntos de datos 5, 6, 8, 2, 1, 5, 6, 7, 10, 0, 14 y 20, 25, 6, 5, 19, 5 obtener la mediana de estos conjuntos de datos.
+\protect\hypertarget{exr:unnamed-chunk-11}{}{\label{exr:unnamed-chunk-11} }Sean los conjuntos de datos 5, 6, 8, 2, 1, 5, 6, 7, 10, 0, 14 y 20, 25, 6, 5, 19, 5 obtener la mediana de estos conjuntos de datos.
 \EndKnitrBlock{exercise}
 
 \BeginKnitrBlock{solution}
@@ -508,7 +513,7 @@ M =
 \]
 
 \BeginKnitrBlock{theorem}
-\protect\hypertarget{thm:unnamed-chunk-12}{}{\label{thm:unnamed-chunk-12} }En la elipse se verifican las siguientes igualdades
+\protect\hypertarget{thm:unnamed-chunk-13}{}{\label{thm:unnamed-chunk-13} }En la elipse se verifican las siguientes igualdades
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -700,7 +705,7 @@ Sean las matrices \(A=[a_{ij}]_{n\times m}\) y \(B=[b_{ij}]_{p\times q}\) entonc
 donde \(i=1,2,\ldots n\) y \(j=1,2,\ldots m\)
 
 \BeginKnitrBlock{example}
-\protect\hypertarget{exm:unnamed-chunk-14}{}{\label{exm:unnamed-chunk-14} }Sean \(\begin{pmatrix} 3&-1&2\\ 2&-1&2\\ 1&-1&0\\ 5&0&0\\ \end{pmatrix}_{4\times 3}\) y \(\begin{pmatrix} 0&-1&2&2&0\\ 1&-1&-2&1&1\\ 3&-1&-3&5&2\\ \end{pmatrix}_{3\times 5}\) entonces \(A\cdot B=\begin{pmatrix} 5&-4&2&15&3\\ 5&-3&0&13&3\\ -1&0&4&1&-1\\ 0&-5&10&10&0\\ \end{pmatrix}_{4\times 5}\)
+\protect\hypertarget{exm:unnamed-chunk-15}{}{\label{exm:unnamed-chunk-15} }Sean \(\begin{pmatrix} 3&-1&2\\ 2&-1&2\\ 1&-1&0\\ 5&0&0\\ \end{pmatrix}_{4\times 3}\) y \(\begin{pmatrix} 0&-1&2&2&0\\ 1&-1&-2&1&1\\ 3&-1&-3&5&2\\ \end{pmatrix}_{3\times 5}\) entonces \(A\cdot B=\begin{pmatrix} 5&-4&2&15&3\\ 5&-3&0&13&3\\ -1&0&4&1&-1\\ 0&-5&10&10&0\\ \end{pmatrix}_{4\times 5}\)
 \EndKnitrBlock{example}
 
 En caso de ser posible la multiplicación entre \(A\), \(B\) y \(C\) entonces se verfican las siguientes propiedades

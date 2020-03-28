@@ -145,7 +145,11 @@
             <section class="normal" id="section-">
 <div id="ecuaciones-diferenciales-de-primer-orden-y-primer-grado" class="section level1">
 <h1><span class="header-section-number">Capítulo 1</span> Ecuaciones diferenciales de primer orden y primer grado</h1>
-<p>Una ecuación ordinaria de primer orden y primer grado se representa como <span class="math display">\[F\left(x,y,\frac{dy}{dx}\right)=0\]</span> donde <span class="math inline">\(F\)</span> relaciona tres variables; una funcion <span class="math inline">\(y\)</span> su variable independiente <span class="math inline">\(x\)</span> y su derivada <span class="math inline">\(\frac{dy}{dx}\)</span>, por ejemplo <span class="math inline">\(\left(y^2+xy^2\right)\frac{dy}{dx}+x^2-x^2y=0\)</span>. Si se despeja <span class="math inline">\(\frac{dy}{dx}\)</span> de <span class="math inline">\(F\left(x,y,\frac{dy}{dx}\right)=0\)</span> obtenemos <span class="math inline">\(\frac{dy}{dx}=g(x,y)\)</span>.</p>
+<p><span class="math display">\[\begin{align*}
+  5&amp;=6\\
+  &amp;=7
+\end{align*}\]</span>
+Una ecuación ordinaria de primer orden y primer grado se representa como <span class="math display">\[F\left(x,y,\frac{dy}{dx}\right)=0\]</span> donde <span class="math inline">\(F\)</span> relaciona tres variables; una funcion <span class="math inline">\(y\)</span> su variable independiente <span class="math inline">\(x\)</span> y su derivada <span class="math inline">\(\frac{dy}{dx}\)</span>, por ejemplo <span class="math inline">\(\left(y^2+xy^2\right)\frac{dy}{dx}+x^2-x^2y=0\)</span>. Si se despeja <span class="math inline">\(\frac{dy}{dx}\)</span> de <span class="math inline">\(F\left(x,y,\frac{dy}{dx}\right)=0\)</span> obtenemos <span class="math inline">\(\frac{dy}{dx}=g(x,y)\)</span>.</p>
 <div id="ecuaciones-diferenciales-de-variable-separable" class="section level2">
 <h2><span class="header-section-number">1.1</span> Ecuaciones diferenciales de variable separable</h2>
 <p>Si una ecuación ordinaria de primer orden y primer grado <span class="math inline">\(\frac{dy}{dx}=f(x,y)\)</span> se puede expresarse como <span class="math inline">\(M(x)dx+N(y)dy=0\)</span> entonces la ecuación recibe el nombre de ecuación diferencial ordinaria de variable separable y la solución es por integración directa <span class="math display">\[\int M(x)dx+\int N(y)dy=0\]</span></p>
@@ -208,24 +212,38 @@ donde <span class="math inline">\(ax+by+c\)</span> es la ecuacion de una recta s
 </div>
 <div id="ecuaciones-diefrenciales-de-bernoulli" class="section level2">
 <h2><span class="header-section-number">1.7</span> Ecuaciones diefrenciales de Bernoulli</h2>
-<p><span class="math display">\[{\displaystyle {\frac {dy}{dx}}+p(x)y+q(x)y^{2}=f(x)}\]</span></p>
+<p>Son de la forma
+<span class="math display" id="eq:w1w">\[\begin{equation}
+\frac{dy}{dx}+p(x)y+q(x)y^{2}=f(x)
+\tag{1.2}
+\end{equation}\]</span></p>
 <p>Esta ecuación se resuelve si previamente se conoce una solución particular, sea <span class="math inline">\(y_{1}(x)\)</span></p>
-<p>Conocida dicha solución, se hace el cambio:</p>
-<p><span class="math display">\[y(x)=z(x)+y_{1}(x)\]</span></p>
-<p>y reemplazando, se obtiene:</p>
-<p><span class="math display">\[\frac{dy}{dx}=-p(x)y-q(x)y^{2}+f(x)=\frac {dz(x)}{dx}+\frac {dy_{1}}{dx}
+<p>Conocida dicha solución, se hace el cambio:
+<span class="math display" id="eq:w2">\[\begin{equation}
+y(x)=z(x)+y_{1}(x)
+\tag{1.3}
+\end{equation}\]</span>
+despejando <span class="math inline">\(\frac{dy}{dx}\)</span> en la Ecuación <a href="ecuaciones-diferenciales-de-primer-orden-y-primer-grado.html#eq:w1w">(1.2)</a> y comparando con la derivada de la Ecuación <a href="ecuaciones-diferenciales-de-primer-orden-y-primer-grado.html#eq:w2">(1.3)</a>, se obtiene
+<span class="math display">\[\frac{dy}{dx}=-p(x)y-q(x)y^{2}+f(x)=\frac {dz(x)}{dx}+\frac {dy_{1}}{dx}
 \]</span>
-es decir:</p>
-<p><span class="math display">\[{\displaystyle -p(x)y-q(x)y^{2}+f(x)={\frac {dz}{dx}}-p(x)y_{1}(x)-q(x)y_{1}(x)^{2}+f(x)}\]</span></p>
-<p><span class="math display">\[\frac{dz}{dx}=p(x)(y_{1}-y)+q(x)(y_{1}^{2}-y^{2})\]</span></p>
-<p>lo que equivale a:</p>
-<p><span class="math display">\[\frac{dz}{dx}=-p(x)z-q(x)(z^{2}+2zy_{1})\]</span></p>
-<p><span class="math display">\[\frac{dz}{dx}=-(p(x)+2q(x)y_{1}(x))z-q(x)z^{2}\]</span></p>
-<p>que corresponde a una ecuación diferencial de Bernoulli.</p>
-<p>Observación
-Obsérvese que si se hace la sustitución:</p>
-<p><span class="math display">\[y(x)=y_{1}(x)+{\frac {1}{z(x)}}\]</span></p>
-<p>propuesta por Euler en la década de 1760 esto lleva directamente a una ecuación lineal diferencial de primer orden.</p>
+además ya que <span class="math inline">\(y_1\)</span> es solución de Ecuación <a href="aplicaciones-de-las-ecuaciones-ordinarias.html#eq:w1">(2.1)</a> es decir:
+<span class="math display" id="eq:w3">\[\begin{align}
+-p(x)y-q(x)y^{2}+f(x)&amp;=\frac {dz}{dx}-p(x)y_{1}(x)-q(x)y_{1}(x)^{2}+f(x)\notag\\
+\frac{dz}{dx}&amp;=p(x)(y_{1}-y)+q(x)(y_{1}^{2}-y^{2})\tag{1.4}
+\end{align}\]</span>
+la Ecuación <a href="ecuaciones-diferenciales-de-primer-orden-y-primer-grado.html#eq:w2">(1.3)</a> genera <span class="math inline">\(y_1-y=-z\)</span> y <span class="math inline">\(y_1^2-y^2=z^2+2y_1z\)</span> lo cual al sustituirlos en la Ecuación <a href="ecuaciones-diferenciales-de-primer-orden-y-primer-grado.html#eq:w3">(1.4)</a> resulta
+<span class="math display">\[\begin{align*}
+\frac{dz}{dx}&amp;=-p(x)z-q(x) \left(z^{2}+2zy_{1}\right)\\
+&amp;=-\left(p(x)+2q(x)y_{1}(x)\right)z-q(x)z^{2}
+\end{align*}\]</span>
+que corresponde a una ecuación diferencial de Bernoulli.</p>
+
+<div class="remark">
+ <span class="remark"><em>Observación. </em></span> Obsérvese que si se hace la sustitución:
+<span class="math display">\[y(x)=y_{1}(x)+{\frac {1}{z(x)}}\]</span>
+propuesta por Euler en la década de 1760 esto lleva directamente a una ecuación lineal diferencial de primer orden.
+</div>
+
 </div>
 <div id="ecuaciones-diferenciales-de-riccati" class="section level2">
 <h2><span class="header-section-number">1.8</span> Ecuaciones diferenciales de Riccati</h2>
@@ -237,7 +255,7 @@ Obsérvese que si se hace la sustitución:</p>
 <h2><span class="header-section-number">1.10</span> Ecuaciones diferenciales no resueltas con respecto a la primera derivada</h2>
 
 <div class="exercise">
-<span id="exr:unnamed-chunk-6" class="exercise"><strong>Ejercicio 1.3  </strong></span>Sean los datos
+<span id="exr:unnamed-chunk-7" class="exercise"><strong>Ejercicio 1.3  </strong></span>Sean los datos
 </div>
 
 

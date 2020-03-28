@@ -1,7 +1,10 @@
 \mainmatter 
 
 # Ecuaciones diferenciales de primer orden y primer grado
-
+\begin{align*}
+  5&=6\\
+  &=7
+\end{align*}
 Una ecuación ordinaria de primer orden y primer grado se representa como $$F\left(x,y,\frac{dy}{dx}\right)=0$$ donde $F$ relaciona tres variables; una funcion $y$ su variable independiente $x$  y su derivada $\frac{dy}{dx}$, por ejemplo $\left(y^2+xy^2\right)\frac{dy}{dx}+x^2-x^2y=0$. Si se despeja $\frac{dy}{dx}$ de $F\left(x,y,\frac{dy}{dx}\right)=0$ obtenemos $\frac{dy}{dx}=g(x,y)$.
 
 
@@ -64,40 +67,40 @@ Una función $f(x,y)$ es **homogenea** de **grado** $k$ si verifica $$f\left(\la
 ## Ecuaciones diefrenciales lineales de primer orden
 
 ## Ecuaciones diefrenciales de Bernoulli
-
-\[{\displaystyle {\frac {dy}{dx}}+p(x)y+q(x)y^{2}=f(x)}\]
-
+Son de la forma
+\begin{equation}
+\frac{dy}{dx}+p(x)y+q(x)y^{2}=f(x)
+(\#eq:w1w)
+\end{equation}
 
 Esta ecuación se resuelve si previamente se conoce una solución particular, sea \(y_{1}(x)\)
 
 Conocida dicha solución, se hace el cambio:
-
-\[y(x)=z(x)+y_{1}(x)\]
-
-y reemplazando, se obtiene:
-
+\begin{equation}
+y(x)=z(x)+y_{1}(x)
+(\#eq:w2)
+\end{equation}
+despejando \( \frac{dy}{dx}\) en la Ecuación \@ref(eq:w1w) y comparando con la derivada de la Ecuación \@ref(eq:w2), se obtiene 
 \[\frac{dy}{dx}=-p(x)y-q(x)y^{2}+f(x)=\frac {dz(x)}{dx}+\frac {dy_{1}}{dx}
 \]
-es decir:
-
-\[{\displaystyle -p(x)y-q(x)y^{2}+f(x)={\frac {dz}{dx}}-p(x)y_{1}(x)-q(x)y_{1}(x)^{2}+f(x)}\]
-
-\[\frac{dz}{dx}=p(x)(y_{1}-y)+q(x)(y_{1}^{2}-y^{2})\]
-
-lo que equivale a:
-
-\[\frac{dz}{dx}=-p(x)z-q(x)(z^{2}+2zy_{1})\]
-
-\[\frac{dz}{dx}=-(p(x)+2q(x)y_{1}(x))z-q(x)z^{2}\]
-
+además ya que \(y_1\) es solución de Ecuación \@ref(eq:w1)  es decir:
+\begin{align}
+-p(x)y-q(x)y^{2}+f(x)&=\frac {dz}{dx}-p(x)y_{1}(x)-q(x)y_{1}(x)^{2}+f(x)\notag\\
+\frac{dz}{dx}&=p(x)(y_{1}-y)+q(x)(y_{1}^{2}-y^{2})(\#eq:w3)
+\end{align}
+la Ecuación \@ref(eq:w2) genera \(y_1-y=-z\) y \(y_1^2-y^2=z^2+2y_1z\) lo cual al sustituirlos en la Ecuación \@ref(eq:w3) resulta
+\begin{align*}
+\frac{dz}{dx}&=-p(x)z-q(x) \left(z^{2}+2zy_{1}\right)\\
+&=-\left(p(x)+2q(x)y_{1}(x)\right)z-q(x)z^{2}
+\end{align*}
 que corresponde a una ecuación diferencial de Bernoulli.
 
-Observación
+```{remark}
 Obsérvese que si se hace la sustitución:
-
 \[y(x)=y_{1}(x)+{\frac {1}{z(x)}}\]
-
 propuesta por Euler en la década de 1760 esto lleva directamente a una ecuación lineal diferencial de primer orden.
+```
+
 
 
 ## Ecuaciones diferenciales de Riccati
