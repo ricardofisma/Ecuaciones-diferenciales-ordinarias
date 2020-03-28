@@ -53,7 +53,9 @@ donde $ax+by+c$ es la ecuacion de una recta sobre el plano euclideo son reducibl
 Una función $f(x,y)$ es **homogenea** de **grado** $k$ si verifica $$f\left(\lambda x, \lambda y\right)=\lambda^kf(x,y)$$
 ```
 
-thm
+```{}
+
+```
 
 ## Ecuaciones diferenciales reducible a homogéneas
 
@@ -63,6 +65,39 @@ thm
 
 ## Ecuaciones diefrenciales de Bernoulli
 
+\[{\displaystyle {\frac {dy}{dx}}+p(x)y+q(x)y^{2}=f(x)}\]
+
+
+Esta ecuación se resuelve si previamente se conoce una solución particular, sea \(y_{1}(x)\)
+
+Conocida dicha solución, se hace el cambio:
+
+\[y(x)=z(x)+y_{1}(x)\]
+
+y reemplazando, se obtiene:
+
+\[\frac{dy}{dx}=-p(x)y-q(x)y^{2}+f(x)=\frac {dz(x)}{dx}+\frac {dy_{1}}{dx}
+\]
+es decir:
+
+\[{\displaystyle -p(x)y-q(x)y^{2}+f(x)={\frac {dz}{dx}}-p(x)y_{1}(x)-q(x)y_{1}(x)^{2}+f(x)}\]
+
+\[\frac{dz}{dx}=p(x)(y_{1}-y)+q(x)(y_{1}^{2}-y^{2})\]
+
+lo que equivale a:
+
+\[\frac{dz}{dx}=-p(x)z-q(x)(z^{2}+2zy_{1})\]
+
+\[\frac{dz}{dx}=-(p(x)+2q(x)y_{1}(x))z-q(x)z^{2}\]
+
+que corresponde a una ecuación diferencial de Bernoulli.
+
+Observación
+Obsérvese que si se hace la sustitución:
+
+\[y(x)=y_{1}(x)+{\frac {1}{z(x)}}\]
+
+propuesta por Euler en la década de 1760 esto lleva directamente a una ecuación lineal diferencial de primer orden.
 
 
 ## Ecuaciones diferenciales de Riccati

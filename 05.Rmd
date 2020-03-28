@@ -1,4 +1,30 @@
 # Ecuaciones diferenciales con coeficientes variables
+$$ \begin{pmatrix}
+123&4&5&6\\
+1&1&1&1\\
+1&1&1&177
+\end{pmatrix}$$
+\[
+M = 
+\left(\begin{array}{c|cc}
+   A & B &\\
+   \hline
+   C & D &77\\
+   C & D &77\\
+   \hline
+   C & D &77\\
+   \hline
+   \begin{array}{c|cc}
+   A & B &\\
+   \hline
+   C & D &77\\
+   C & D &77\\
+   \hline
+   C & D &77\\
+   C & D &77_{11}\\
+\end{array} & D &77_{11}\\
+\end{array}\right)
+\]
 
 ```{theorem} 
 En la elipse se verifican las siguientes igualdades

@@ -108,7 +108,7 @@
 \author{Ricardo Michel MALLQUI BAÑOS}
 \providecommand{\institute}[1]{}
 \institute{Universidad Nacional San Cristóbal De Huamanga}
-\date{2020-03-27}
+\date{2020-03-28}
 
 \usepackage{amsthm}
 \newtheorem{theorem}{Teorema}[chapter]
@@ -243,7 +243,8 @@ donde \(ax+by+c\) es la ecuacion de una recta sobre el plano euclideo son reduci
 \protect\hypertarget{def:unnamed-chunk-5}{}{\label{def:unnamed-chunk-5} }Una función \(f(x,y)\) es \textbf{homogenea} de \textbf{grado} \(k\) si verifica \[f\left(\lambda x, \lambda y\right)=\lambda^kf(x,y)\]
 \EndKnitrBlock{definition}
 
-thm
+\begin{verbatim}
+\end{verbatim}
 
 \hypertarget{ecuaciones-diferenciales-reducible-a-homoguxe9neas}{%
 \section{Ecuaciones diferenciales reducible a homogéneas}\label{ecuaciones-diferenciales-reducible-a-homoguxe9neas}}
@@ -256,6 +257,39 @@ thm
 
 \hypertarget{ecuaciones-diefrenciales-de-bernoulli}{%
 \section{Ecuaciones diefrenciales de Bernoulli}\label{ecuaciones-diefrenciales-de-bernoulli}}
+
+\[{\displaystyle {\frac {dy}{dx}}+p(x)y+q(x)y^{2}=f(x)}\]
+
+Esta ecuación se resuelve si previamente se conoce una solución particular, sea \(y_{1}(x)\)
+
+Conocida dicha solución, se hace el cambio:
+
+\[y(x)=z(x)+y_{1}(x)\]
+
+y reemplazando, se obtiene:
+
+\[\frac{dy}{dx}=-p(x)y-q(x)y^{2}+f(x)=\frac {dz(x)}{dx}+\frac {dy_{1}}{dx}
+\]
+es decir:
+
+\[{\displaystyle -p(x)y-q(x)y^{2}+f(x)={\frac {dz}{dx}}-p(x)y_{1}(x)-q(x)y_{1}(x)^{2}+f(x)}\]
+
+\[\frac{dz}{dx}=p(x)(y_{1}-y)+q(x)(y_{1}^{2}-y^{2})\]
+
+lo que equivale a:
+
+\[\frac{dz}{dx}=-p(x)z-q(x)(z^{2}+2zy_{1})\]
+
+\[\frac{dz}{dx}=-(p(x)+2q(x)y_{1}(x))z-q(x)z^{2}\]
+
+que corresponde a una ecuación diferencial de Bernoulli.
+
+Observación
+Obsérvese que si se hace la sustitución:
+
+\[y(x)=y_{1}(x)+{\frac {1}{z(x)}}\]
+
+propuesta por Euler en la década de 1760 esto lleva directamente a una ecuación lineal diferencial de primer orden.
 
 \hypertarget{ecuaciones-diferenciales-de-riccati}{%
 \section{Ecuaciones diferenciales de Riccati}\label{ecuaciones-diferenciales-de-riccati}}
@@ -445,6 +479,33 @@ Los pasos son:
 
 \hypertarget{ecuaciones-diferenciales-con-coeficientes-variables}{%
 \chapter{Ecuaciones diferenciales con coeficientes variables}\label{ecuaciones-diferenciales-con-coeficientes-variables}}
+
+\[ \begin{pmatrix}
+123&4&5&6\\
+1&1&1&1\\
+1&1&1&177
+\end{pmatrix}\]
+\[
+M = 
+\left(\begin{array}{c|cc}
+   A & B &\\
+   \hline
+   C & D &77\\
+   C & D &77\\
+   \hline
+   C & D &77\\
+   \hline
+   \begin{array}{c|cc}
+   A & B &\\
+   \hline
+   C & D &77\\
+   C & D &77\\
+   \hline
+   C & D &77\\
+   C & D &77_{11}\\
+\end{array} & D &77_{11}\\
+\end{array}\right)
+\]
 
 \BeginKnitrBlock{theorem}
 \protect\hypertarget{thm:unnamed-chunk-12}{}{\label{thm:unnamed-chunk-12} }En la elipse se verifican las siguientes igualdades
