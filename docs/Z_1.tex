@@ -192,7 +192,7 @@ Debido a la poca información estructurada de estadistica descriptiva se propone
 \hypertarget{ecuaciones-diferenciales-de-primer-orden-y-primer-grado}{%
 \chapter{Ecuaciones diferenciales de primer orden y primer grado}\label{ecuaciones-diferenciales-de-primer-orden-y-primer-grado}}
 
-Una ecuación ordinaria de primer orden y primer grado se representa como \[F\left(x,y,\frac{dy}{dx}\right)=0\] donde \(F\) relaciona tres variables; una funcion \(y\) su variable independiente \(x\) y su derivada \(\frac{dy}{dx}\), por ejemplo \(\left(y^2+xy^2\right)\frac{dy}{dx}+x^2-x^2y=0\).
+Una ecuación ordinaria de primer orden y primer grado se representa como \[F\left(x,y,\frac{dy}{dx}\right)=0\] donde \(F\) relaciona tres variables; una funcion \(y\) su variable independiente \(x\) y su derivada \(\frac{dy}{dx}\), por ejemplo \(\left(y^2+xy^2\right)\frac{dy}{dx}+x^2-x^2y=0\). Si se despeja \(\frac{dy}{dx}\) de \(F\left(x,y,\frac{dy}{dx}\right)=0\) obtenemos \(\frac{dy}{dx}=g(x,y)\).
 
 \hypertarget{ecuaciones-diferenciales-de-variable-separable}{%
 \section{Ecuaciones diferenciales de variable separable}\label{ecuaciones-diferenciales-de-variable-separable}}
@@ -230,8 +230,20 @@ integrando se tiene \[\int\frac{y^2}{1-y}dy+\int\frac{x^2}{1+x}dx=\int 0\]
 \hypertarget{ecuaciones-diferenciales-reducible-a-variable-separable}{%
 \section{Ecuaciones diferenciales reducible a variable separable}\label{ecuaciones-diferenciales-reducible-a-variable-separable}}
 
+Ecuaciones de la forma
+\begin{equation}
+\frac{dy}{dx}=f(ax+by+c)\label{eq:er1}
+\end{equation}
+donde \(ax+by+c\) es la ecuacion de una recta sobre el plano euclideo son reducibles a variables separables. Si se realiza la sustitución de la derivada de \(z=ax+by+c\) en la ecuación \eqref{eq:er1} se obtiene una ecuación de variable separable. En efecto de \(z=ax+by+c\) se tiene \(\frac{dy}{dx}=\frac{1}{b}\left(\frac{dz}{dx}-a\right)\) esto en \eqref{eq:er1} genera \(\frac{1}{b}\left(\frac{dy}{dx}-a\right)=f(z)\) que es una ecuacion de variable separable \[\frac{dy}{a+bf(z)}=dx.\]
+
 \hypertarget{ecuaciones-diferenciales-homoguxe9neas}{%
 \section{Ecuaciones diferenciales homogéneas}\label{ecuaciones-diferenciales-homoguxe9neas}}
+
+\BeginKnitrBlock{definition}
+\protect\hypertarget{def:unnamed-chunk-5}{}{\label{def:unnamed-chunk-5} }Una función \(f(x,y)\) es \textbf{homogenea} de \textbf{grado} \(k\) si verifica \[f\left(\lambda x, \lambda y\right)=\lambda^kf(x,y)\]
+\EndKnitrBlock{definition}
+
+thm
 
 \hypertarget{ecuaciones-diferenciales-reducible-a-homoguxe9neas}{%
 \section{Ecuaciones diferenciales reducible a homogéneas}\label{ecuaciones-diferenciales-reducible-a-homoguxe9neas}}
@@ -255,7 +267,7 @@ integrando se tiene \[\int\frac{y^2}{1-y}dy+\int\frac{x^2}{1+x}dx=\int 0\]
 \section{Ecuaciones diferenciales no resueltas con respecto a la primera derivada}\label{ecuaciones-diferenciales-no-resueltas-con-respecto-a-la-primera-derivada}}
 
 \BeginKnitrBlock{exercise}
-\protect\hypertarget{exr:unnamed-chunk-5}{}{\label{exr:unnamed-chunk-5} }Sean los datos
+\protect\hypertarget{exr:unnamed-chunk-6}{}{\label{exr:unnamed-chunk-6} }Sean los datos
 \EndKnitrBlock{exercise}
 
 \BeginKnitrBlock{solution}
@@ -331,7 +343,7 @@ Clase & Clase & \(f_i\) & \(F_i\) & \(F_i^*\) & \(h_i\) & \(H_i\) & \(H_i^*\) & 
 \end{longtable}
 
 \BeginKnitrBlock{exercise}
-\protect\hypertarget{exr:unnamed-chunk-7}{}{\label{exr:unnamed-chunk-7} }Si el promedio de \(n\) datos es \(\overline{x}\) entonces el promedio del conjunto inicial más un dato adicional \(x_{n+1}\) es \[\overline{x}'=\frac{n\overline{x}+x_{n+1}}{n+1}\] en general si se adicionan \(r\) datos \(y_1, y_2, \ldots y_r\) entonces el nuevo promedio será \[\overline{x}'=\frac{n\overline{x}+y_{1}+y_2+\ldots+y_r}{n+r}\]
+\protect\hypertarget{exr:unnamed-chunk-8}{}{\label{exr:unnamed-chunk-8} }Si el promedio de \(n\) datos es \(\overline{x}\) entonces el promedio del conjunto inicial más un dato adicional \(x_{n+1}\) es \[\overline{x}'=\frac{n\overline{x}+x_{n+1}}{n+1}\] en general si se adicionan \(r\) datos \(y_1, y_2, \ldots y_r\) entonces el nuevo promedio será \[\overline{x}'=\frac{n\overline{x}+y_{1}+y_2+\ldots+y_r}{n+r}\]
 \EndKnitrBlock{exercise}
 
 \BeginKnitrBlock{solution}
@@ -380,7 +392,7 @@ Clase & Clase & \(f_i\) & \(F_i\) & \(F_i^*\) & \(h_i\) & \(H_i\) & \(H_i^*\) & 
 Obtener la mediana consiste en ordenar los datos de menor a mayor y considerar dos casos: El prmero si el numero de datos s impar entonces el dato \(x_{\frac{n+1}{2}}\) del conjunto ordenado será la mediana es decir \(\text{Me}=x_{\frac{n+1}{2}}\) de otro lado si el número de datos es par entonces la mediana es la semisuma de los dos datos intermedios es decir \(\text{Me}=\frac{x_{\frac{n}{2}}+x_{\frac{n}{2}+1}}{2}\)
 
 \BeginKnitrBlock{exercise}
-\protect\hypertarget{exr:unnamed-chunk-9}{}{\label{exr:unnamed-chunk-9} }Sean los conjuntos de datos 5, 6, 8, 2, 1, 5, 6, 7, 10, 0, 14 y 20, 25, 6, 5, 19, 5 obtener la mediana de estos conjuntos de datos.
+\protect\hypertarget{exr:unnamed-chunk-10}{}{\label{exr:unnamed-chunk-10} }Sean los conjuntos de datos 5, 6, 8, 2, 1, 5, 6, 7, 10, 0, 14 y 20, 25, 6, 5, 19, 5 obtener la mediana de estos conjuntos de datos.
 \EndKnitrBlock{exercise}
 
 \BeginKnitrBlock{solution}
@@ -435,7 +447,7 @@ Los pasos son:
 \chapter{Ecuaciones diferenciales con coeficientes variables}\label{ecuaciones-diferenciales-con-coeficientes-variables}}
 
 \BeginKnitrBlock{theorem}
-\protect\hypertarget{thm:unnamed-chunk-11}{}{\label{thm:unnamed-chunk-11} }En la elipse se verifican las siguientes igualdades
+\protect\hypertarget{thm:unnamed-chunk-12}{}{\label{thm:unnamed-chunk-12} }En la elipse se verifican las siguientes igualdades
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -596,7 +608,7 @@ Sean las matrices \(A=[a_{ij}]_{n\times m}\) y \(B=[b_{ij}]_{p\times q}\) entonc
 donde \(i=1,2,\ldots n\) y \(j=1,2,\ldots m\)
 
 \BeginKnitrBlock{example}
-\protect\hypertarget{exm:unnamed-chunk-13}{}{\label{exm:unnamed-chunk-13} }Sean \(\begin{pmatrix} 3&-1&2\\ 2&-1&2\\ 1&-1&0\\ 5&0&0\\ \end{pmatrix}_{4\times 3}\) y \(\begin{pmatrix} 0&-1&2&2&0\\ 1&-1&-2&1&1\\ 3&-1&-3&5&2\\ \end{pmatrix}_{3\times 5}\) entonces \(A\cdot B=\begin{pmatrix} 5&-4&2&15&3\\ 5&-3&0&13&3\\ -1&0&4&1&-1\\ 0&-5&10&10&0\\ \end{pmatrix}_{4\times 5}\)
+\protect\hypertarget{exm:unnamed-chunk-14}{}{\label{exm:unnamed-chunk-14} }Sean \(\begin{pmatrix} 3&-1&2\\ 2&-1&2\\ 1&-1&0\\ 5&0&0\\ \end{pmatrix}_{4\times 3}\) y \(\begin{pmatrix} 0&-1&2&2&0\\ 1&-1&-2&1&1\\ 3&-1&-3&5&2\\ \end{pmatrix}_{3\times 5}\) entonces \(A\cdot B=\begin{pmatrix} 5&-4&2&15&3\\ 5&-3&0&13&3\\ -1&0&4&1&-1\\ 0&-5&10&10&0\\ \end{pmatrix}_{4\times 5}\)
 \EndKnitrBlock{example}
 
 En caso de ser posible la multiplicación entre \(A\), \(B\) y \(C\) entonces se verfican las siguientes propiedades

@@ -2,7 +2,7 @@
 
 # Ecuaciones diferenciales de primer orden y primer grado
 
-Una ecuación ordinaria de primer orden y primer grado se representa como $$F\left(x,y,\frac{dy}{dx}\right)=0$$ donde $F$ relaciona tres variables; una funcion $y$ su variable independiente $x$  y su derivada $\frac{dy}{dx}$, por ejemplo $\left(y^2+xy^2\right)\frac{dy}{dx}+x^2-x^2y=0$.
+Una ecuación ordinaria de primer orden y primer grado se representa como $$F\left(x,y,\frac{dy}{dx}\right)=0$$ donde $F$ relaciona tres variables; una funcion $y$ su variable independiente $x$  y su derivada $\frac{dy}{dx}$, por ejemplo $\left(y^2+xy^2\right)\frac{dy}{dx}+x^2-x^2y=0$. Si se despeja $\frac{dy}{dx}$ de $F\left(x,y,\frac{dy}{dx}\right)=0$ obtenemos $\frac{dy}{dx}=g(x,y)$.
 
 
 ## Ecuaciones diferenciales de variable separable
@@ -38,11 +38,22 @@ $\left(y^2+xy^2\right)\frac{dy}{dx}+x^2-x^2y=0$
 integrando se tiene $$\int\frac{y^2}{1-y}dy+\int\frac{x^2}{1+x}dx=\int 0$$
 $$(x+y)(x-y-2)+2\ln\left\vert\frac{1+x}{1-y}\right\vert=k$$
 ```
+
 ## Ecuaciones diferenciales reducible a variable separable
+Ecuaciones de la forma
+\begin{equation}
+\frac{dy}{dx}=f(ax+by+c)(\#eq:er1)
+\end{equation}
+donde $ax+by+c$ es la ecuacion de una recta sobre el plano euclideo son reducibles a variables separables. Si se realiza la sustitución de la derivada de $z=ax+by+c$ en la ecuación \@ref(eq:er1) se obtiene una ecuación de variable separable. En efecto de $z=ax+by+c$ se tiene $\frac{dy}{dx}=\frac{1}{b}\left(\frac{dz}{dx}-a\right)$ esto en \@ref(eq:er1) genera $\frac{1}{b}\left(\frac{dy}{dx}-a\right)=f(z)$ que es una ecuacion de variable separable $$\frac{dy}{a+bf(z)}=dx.$$
+
 
 
 ## Ecuaciones diferenciales homogéneas
+```{definition}
+Una función $f(x,y)$ es **homogenea** de **grado** $k$ si verifica $$f\left(\lambda x, \lambda y\right)=\lambda^kf(x,y)$$
+```
 
+thm
 
 ## Ecuaciones diferenciales reducible a homogéneas
 
@@ -51,6 +62,7 @@ $$(x+y)(x-y-2)+2\ln\left\vert\frac{1+x}{1-y}\right\vert=k$$
 ## Ecuaciones diefrenciales lineales de primer orden
 
 ## Ecuaciones diefrenciales de Bernoulli
+
 
 
 ## Ecuaciones diferenciales de Riccati

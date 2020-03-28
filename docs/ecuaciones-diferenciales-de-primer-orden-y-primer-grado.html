@@ -145,7 +145,7 @@
             <section class="normal" id="section-">
 <div id="ecuaciones-diferenciales-de-primer-orden-y-primer-grado" class="section level1">
 <h1><span class="header-section-number">Capítulo 1</span> Ecuaciones diferenciales de primer orden y primer grado</h1>
-<p>Una ecuación ordinaria de primer orden y primer grado se representa como <span class="math display">\[F\left(x,y,\frac{dy}{dx}\right)=0\]</span> donde <span class="math inline">\(F\)</span> relaciona tres variables; una funcion <span class="math inline">\(y\)</span> su variable independiente <span class="math inline">\(x\)</span> y su derivada <span class="math inline">\(\frac{dy}{dx}\)</span>, por ejemplo <span class="math inline">\(\left(y^2+xy^2\right)\frac{dy}{dx}+x^2-x^2y=0\)</span>.</p>
+<p>Una ecuación ordinaria de primer orden y primer grado se representa como <span class="math display">\[F\left(x,y,\frac{dy}{dx}\right)=0\]</span> donde <span class="math inline">\(F\)</span> relaciona tres variables; una funcion <span class="math inline">\(y\)</span> su variable independiente <span class="math inline">\(x\)</span> y su derivada <span class="math inline">\(\frac{dy}{dx}\)</span>, por ejemplo <span class="math inline">\(\left(y^2+xy^2\right)\frac{dy}{dx}+x^2-x^2y=0\)</span>. Si se despeja <span class="math inline">\(\frac{dy}{dx}\)</span> de <span class="math inline">\(F\left(x,y,\frac{dy}{dx}\right)=0\)</span> obtenemos <span class="math inline">\(\frac{dy}{dx}=g(x,y)\)</span>.</p>
 <div id="ecuaciones-diferenciales-de-variable-separable" class="section level2">
 <h2><span class="header-section-number">1.1</span> Ecuaciones diferenciales de variable separable</h2>
 <p>Si una ecuación ordinaria de primer orden y primer grado <span class="math inline">\(\frac{dy}{dx}=f(x,y)\)</span> se puede expresarse como <span class="math inline">\(M(x)dx+N(y)dy=0\)</span> entonces la ecuación recibe el nombre de ecuación diferencial ordinaria de variable separable y la solución es por integración directa <span class="math display">\[\int M(x)dx+\int N(y)dy=0\]</span></p>
@@ -182,9 +182,20 @@ integrando se tiene <span class="math display">\[\int\frac{y^2}{1-y}dy+\int\frac
 </div>
 <div id="ecuaciones-diferenciales-reducible-a-variable-separable" class="section level2">
 <h2><span class="header-section-number">1.2</span> Ecuaciones diferenciales reducible a variable separable</h2>
+<p>Ecuaciones de la forma
+<span class="math display" id="eq:er1">\[\begin{equation}
+\frac{dy}{dx}=f(ax+by+c)\tag{1.1}
+\end{equation}\]</span>
+donde <span class="math inline">\(ax+by+c\)</span> es la ecuacion de una recta sobre el plano euclideo son reducibles a variables separables. Si se realiza la sustitución de la derivada de <span class="math inline">\(z=ax+by+c\)</span> en la ecuación <a href="ecuaciones-diferenciales-de-primer-orden-y-primer-grado.html#eq:er1">(1.1)</a> se obtiene una ecuación de variable separable. En efecto de <span class="math inline">\(z=ax+by+c\)</span> se tiene <span class="math inline">\(\frac{dy}{dx}=\frac{1}{b}\left(\frac{dz}{dx}-a\right)\)</span> esto en <a href="ecuaciones-diferenciales-de-primer-orden-y-primer-grado.html#eq:er1">(1.1)</a> genera <span class="math inline">\(\frac{1}{b}\left(\frac{dy}{dx}-a\right)=f(z)\)</span> que es una ecuacion de variable separable <span class="math display">\[\frac{dy}{a+bf(z)}=dx.\]</span></p>
 </div>
 <div id="ecuaciones-diferenciales-homogéneas" class="section level2">
 <h2><span class="header-section-number">1.3</span> Ecuaciones diferenciales homogéneas</h2>
+
+<div class="definition">
+<span id="def:unnamed-chunk-5" class="definition"><strong>Definición 1.1  </strong></span>Una función <span class="math inline">\(f(x,y)\)</span> es <strong>homogenea</strong> de <strong>grado</strong> <span class="math inline">\(k\)</span> si verifica <span class="math display">\[f\left(\lambda x, \lambda y\right)=\lambda^kf(x,y)\]</span>
+</div>
+
+<p>thm</p>
 </div>
 <div id="ecuaciones-diferenciales-reducible-a-homogéneas" class="section level2">
 <h2><span class="header-section-number">1.4</span> Ecuaciones diferenciales reducible a homogéneas</h2>
@@ -208,7 +219,7 @@ integrando se tiene <span class="math display">\[\int\frac{y^2}{1-y}dy+\int\frac
 <h2><span class="header-section-number">1.10</span> Ecuaciones diferenciales no resueltas con respecto a la primera derivada</h2>
 
 <div class="exercise">
-<span id="exr:unnamed-chunk-5" class="exercise"><strong>Ejercicio 1.3  </strong></span>Sean los datos
+<span id="exr:unnamed-chunk-6" class="exercise"><strong>Ejercicio 1.3  </strong></span>Sean los datos
 </div>
 
 
@@ -251,7 +262,7 @@ gitbook.start({
 "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
-"theme": "Sepia",
+"theme": "sepia",
 "family": "serif",
 "size": 2
 },
