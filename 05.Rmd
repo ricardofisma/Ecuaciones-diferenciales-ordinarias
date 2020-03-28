@@ -67,6 +67,7 @@ entonces haciendo uso de \@ref(eq:errr) en $d\left[V_1;C\right]=d\left[V_1;F_1\r
 
 Por lo tanto 
 ```
+
 Table: (\#tab:ww) Caption
 
   | Sepal.Length| Sepal.Width| Petal.Length|
@@ -81,4 +82,4 @@ La tabla \@ref(tab:ww)
 knitr::include_graphics("elipse.svg")
 ```
 \index{fff}
-Sea la Tabla \@ref(tab:ww) y la Figura \@ref(fig:f1)
+Sea la Tabla \@ref(tab:ww) y la Figura \@ref(fig:f1) entonces 
