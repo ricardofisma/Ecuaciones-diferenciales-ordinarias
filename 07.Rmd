@@ -8,7 +8,7 @@ Algunas propiedades son
 2. $\sum_{i=1}^n\left(x_i+y_i\right)=\sum_{i=1}^nx_i+\sum_{i=1}^ny_i$
 3. $\sum_{i=1}^nx_i$
 $$\int_1^3=\lim_{n\to \infty}\sum_{i=0}^{n}f^i(x)$$
-citado por [@xie2015]
+citado por [@xie2015] y [@R-base] www
 
 ## ee
 
@@ -30,7 +30,7 @@ Dos matrices son iguales si tienen el **mismo orden** y cada una de las entradas
 ## Algebra de matrices
 Sean las matrices $A=[a_{ij}]_{n\times m}$ y $B=[b_{ij}]_{p\times q}$ entonces la suma y producto de matrices se definen
 
-1. Sea $k$ un escalar entonces se verifica que $kA=[ka_{ij}]$, $i=1,2,\ldots n$ y $j=1,2,\ldots m$ es decir el escalar $k$ multiplica a cada una de las entradas de la matriz.
+1. Sea $k$ un escalar entonces se verifica que $kA=[ka_{ij}]$, $i=1,2,\ldots n$ y $j=1,2,\ldots m$ es decir el escalar\index{escalar} $k$ multiplica a cada una de las entradas de la matriz.
 
 2. La suma o diferencia es posible si $n=p$ y $m=q$ es decir los ordenes de $A$ y $B$ son iguales, entonces la suma o diferencia resulta $A\pm B=[a_{ij}+b_{ij}]_{n\times m}$, $i=1,2,\ldots n$ y $j=1,2,\ldots m$ 
 
@@ -57,12 +57,12 @@ Sean $\begin{pmatrix}
 0&-1&2&2&0\\
 1&-1&-2&1&1\\
 3&-1&-3&5&2\\
-\end{pmatrix}_{3\times 5}$ entonces $A\cdot B=\begin{pmatrix}
+\end{pmatrix}_{3\times 5}$ entonces $$A\cdot B=\begin{pmatrix}
 5&-4&2&15&3\\
 5&-3&0&13&3\\
 -1&0&4&1&-1\\
 0&-5&10&10&0\\
-\end{pmatrix}_{4\times 5}$
+\end{pmatrix}_{4\times 5}$$
 ```
 En caso de ser posible la multiplicación entre $A$, $B$ y $C$ entonces se verfican las siguientes propiedades
 

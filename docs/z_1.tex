@@ -275,7 +275,7 @@ despejando \(\frac{dy}{dx}\) en la Ecuación \eqref{eq:w1w} y comparando con la 
 \]
 además ya que \(y_1\) es solución de Ecuación \eqref{eq:w1} es decir:
 \begin{align}
-\notag -p(x)y-q(x)y^{2}+f(x)&=\frac{dz}{dx}-p(x)y_{1}(x)-q(x)y_{1}(x)^{2}+f(x) \\
+-p(x)y-q(x)y^{2}+f(x)&=\frac{dz}{dx}-p(x)y_{1}(x)-q(x)y_{1}(x)^{2}+f(x)\notag\\
 \frac{dz}{dx}&=p(x)(y_{1}-y)+q(x)(y_{1}^{2}-y^{2})\label{eq:w3}
 \end{align}
 la Ecuación \eqref{eq:w2} genera \(y_1-y=-z\) y \(y_1^2-y^2=z^2+2y_1z\) lo cual al sustituirlos en la Ecuación \eqref{eq:w3} resulta
@@ -489,7 +489,8 @@ Los pasos son:
 Entonces
 
 \[
-\left(\begin{array}{ccc}
+M = 
+\left(\begin{array}{c|cc}
    A & B &\\
    \hline
    C & D &77\\
@@ -497,7 +498,7 @@ Entonces
    \hline
    C & D &77\\
    \hline
-   \begin{array}{ccc}
+   \begin{array}{c|cc}
    A & B &\\
    \hline
    C & D &77\\
@@ -533,7 +534,7 @@ Entonces
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{1}
 \item
-  Por la definición \eqref{eq:binom} de la elipse se tiene
+  Por la definición de la elipse se tiene
   \begin{equation}
   d\left[V_1;F_2\right]+d\left[V_1;F_1\right]=2a
   \label{eq:er}
@@ -683,7 +684,7 @@ Sean las matrices \(A=[a_{ij}]_{n\times m}\) y \(B=[b_{ij}]_{p\times q}\) entonc
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \item
-  Sea \(k\) un escalar entonces se verifica que \(kA=[ka_{ij}]\), \(i=1,2,\ldots n\) y \(j=1,2,\ldots m\) es decir el escalar \(k\) multiplica a cada una de las entradas de la matriz.
+  Sea \(k\) un escalar entonces se verifica que \(kA=[ka_{ij}]\), \(i=1,2,\ldots n\) y \(j=1,2,\ldots m\) es decir el escalar\index{escalar} \(k\) multiplica a cada una de las entradas de la matriz.
 \item
   La suma o diferencia es posible si \(n=p\) y \(m=q\) es decir los ordenes de \(A\) y \(B\) son iguales, entonces la suma o diferencia resulta \(A\pm B=[a_{ij}+b_{ij}]_{n\times m}\), \(i=1,2,\ldots n\) y \(j=1,2,\ldots m\)
 \item

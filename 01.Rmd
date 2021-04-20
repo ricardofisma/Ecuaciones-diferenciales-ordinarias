@@ -1,10 +1,7 @@
 \mainmatter 
 
 # Ecuaciones diferenciales de primer orden y primer grado
-\begin{align*}
-  5&=6\\
-  &=7
-\end{align*}
+
 Una ecuación ordinaria de primer orden y primer grado se representa como $$F\left(x,y,\frac{dy}{dx}\right)=0$$ donde $F$ relaciona tres variables; una funcion $y$ su variable independiente $x$  y su derivada $\frac{dy}{dx}$, por ejemplo $\left(y^2+xy^2\right)\frac{dy}{dx}+x^2-x^2y=0$. Si se despeja $\frac{dy}{dx}$ de $F\left(x,y,\frac{dy}{dx}\right)=0$ obtenemos $\frac{dy}{dx}=g(x,y)$.
 
 
@@ -56,8 +53,8 @@ donde $ax+by+c$ es la ecuacion de una recta sobre el plano euclideo son reducibl
 Una función $f(x,y)$ es **homogenea** de **grado** $k$ si verifica $$f\left(\lambda x, \lambda y\right)=\lambda^kf(x,y)$$
 ```
 
-```{}
-
+```{example}
+wwwwwwwww
 ```
 
 ## Ecuaciones diferenciales reducible a homogéneas
@@ -83,7 +80,7 @@ despejando \( \frac{dy}{dx}\) en la Ecuación \@ref(eq:w1w) y comparando con la 
 \]
 además ya que \(y_1\) es solución de Ecuación \@ref(eq:w1)  es decir:
 \begin{align}
--p(x)y-q(x)y^{2}+f(x)&=\frac {dz}{dx}-p(x)y_{1}(x)-q(x)y_{1}(x)^{2}+f(x)\notag\\
+-p(x)y-q(x)y^{2}+f(x)&=\frac{dz}{dx}-p(x)y_{1}(x)-q(x)y_{1}(x)^{2}+f(x)\notag\\
 \frac{dz}{dx}&=p(x)(y_{1}-y)+q(x)(y_{1}^{2}-y^{2})(\#eq:w3)
 \end{align}
 la Ecuación \@ref(eq:w2) genera \(y_1-y=-z\) y \(y_1^2-y^2=z^2+2y_1z\) lo cual al sustituirlos en la Ecuación \@ref(eq:w3) resulta
